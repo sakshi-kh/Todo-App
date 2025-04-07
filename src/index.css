@@ -24,7 +24,7 @@ body {
     font-size: 2.2rem;
   }
   
-  /* ===== FORM SECTION ===== */
+
   form {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +68,6 @@ body {
     background-color: #e67e22;
   }
   
-  /* ===== TODO ITEM ===== */
   .todo {
     background: #3b3f50;
     padding: 1rem;
@@ -102,7 +101,7 @@ body {
     color: #7f8c8d;
   }
   
-  /* ===== BUTTONS ===== */
+
   .todo-buttons {
     display: flex;
     gap: 0.5rem;
@@ -125,7 +124,7 @@ body {
     background-color: #c0392b;
   }
   
-  /* ===== MEDIA QUERIES ===== */
+  
   @media (max-width: 600px) {
     form {
       flex-direction: column;
@@ -143,7 +142,8 @@ body {
   
     input,
     button {
-      width: 50%;
+      width: 100%;
+      height: 50%;
     }
   }
   
