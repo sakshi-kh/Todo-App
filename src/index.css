@@ -13,6 +13,8 @@ body {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 100%;
   }
   
   h1 {
@@ -22,6 +24,7 @@ body {
     font-size: 2.2rem;
   }
   
+  /* ===== FORM SECTION ===== */
   form {
     display: flex;
     flex-wrap: wrap;
@@ -30,10 +33,12 @@ body {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-sizing: border-box;
   }
   
   input {
-    flex: 1;
+    flex: 1 1 250px;
+    min-width: 0;
     padding: 0.6rem 1rem;
     border-radius: 8px;
     border: none;
@@ -41,6 +46,8 @@ body {
     font-size: 1rem;
     background: #ecf0f1;
     color: #2c3e50;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   button {
@@ -61,6 +68,7 @@ body {
     background-color: #e67e22;
   }
   
+  /* ===== TODO ITEM ===== */
   .todo {
     background: #3b3f50;
     padding: 1rem;
@@ -70,6 +78,7 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: transform 0.2s;
+    flex-wrap: wrap;
   }
   .todo:hover {
     transform: scale(1.01);
@@ -93,10 +102,14 @@ body {
     color: #7f8c8d;
   }
   
+  /* ===== BUTTONS ===== */
   .todo-buttons {
     display: flex;
     gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
   }
+  
   .complete-btn {
     background-color: #2ecc71;
     color: white;
@@ -112,6 +125,7 @@ body {
     background-color: #c0392b;
   }
   
+  /* ===== MEDIA QUERIES ===== */
   @media (max-width: 600px) {
     form {
       flex-direction: column;
@@ -123,10 +137,12 @@ body {
     }
   
     .todo-buttons {
-      margin-top: 0.5rem;
+      width: 100%;
+      justify-content: flex-start;
     }
   
-    input {
+    input,
+    button {
       width: 100%;
     }
   }
